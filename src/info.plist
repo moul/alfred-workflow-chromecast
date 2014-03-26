@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.moul.gauth</string>
+	<string>com.alfredapp.moul.chromecast</string>
 	<key>connections</key>
 	<dict>
 		<key>1429C6D3-6007-43B8-96E0-838FAB65BCD3</key>
@@ -181,6 +181,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>https://github.com/moul/alfred-workflow-gauth</string>
+	<string>https://github.com/moul/alfred-workflow-chromecast</string>
 </dict>
 </plist>

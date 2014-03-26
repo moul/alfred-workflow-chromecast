@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.moul.gauth</string>
+	<key>connections</key>
+	<dict>
+		<key>68730405-C4F8-447E-9E1F-9D689739A175</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2D03A99-8E4B-4042-896C-4126662B8CD4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D2D03A99-8E4B-4042-896C-4126662B8CD4</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Manfred Touron</string>
+	<key>description</key>
+	<string>Chromecast Workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Chromecast</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python workflow.py youtube_run "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D2D03A99-8E4B-4042-896C-4126662B8CD4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>chromecast-yt</string>
+				<key>subtext</key>
+				<string>Video ID, ie: iRZ2Sh5-XuM</string>
+				<key>text</key>
+				<string>Chromecast Youtube</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>68730405-C4F8-447E-9E1F-9D689739A175</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>68730405-C4F8-447E-9E1F-9D689739A175</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>D2D03A99-8E4B-4042-896C-4126662B8CD4</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/moul/alfred-workflow-gauth</string>
+</dict>
+</plist>

@@ -41,13 +41,13 @@ class ChromecastWorkflow(alfred.AlfredWorkflow):
         return self.build_url('apps/YouTube')
 
     def do_youtube_run(self, query):
-        print(query)
         if query == 'stop':
             return self.do_youtube_stop()
-        print(request(self.youtube_url, {'v': query, 't': 0}))
+        request(self.youtube_url, {'v': query, 't': 0})
+        self.write_text('Running {} on Chromecast'.format(query))
 
     def do_youtube_stop(self, query=None):
-        print(request(self.youtube_url, method='DELETE'))
+        request(self.youtube_url, method='DELETE')
 
 
 def main(action, query):

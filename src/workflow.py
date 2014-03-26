@@ -9,9 +9,6 @@ import urllib2
 import alfred
 
 
-CHROMECAST_IP='192.168.86.40'
-
-
 def request(url, values=None, headers=None, method=None, data=None):
     if values and not data:
         data = urllib.urlencode(values)
@@ -27,14 +24,21 @@ def request(url, values=None, headers=None, method=None, data=None):
 
 class ChromecastWorkflow(alfred.AlfredWorkflow):
     _reserved_words = ['add', 'update', 'remove']
+    port = 8008
 
-    def __init__(self, ip, port=8008, max_results=20):
+    def __init__(self, max_results=20):
         self.max_results = max_results
-        self.ip = ip
-        self.port = port
 
     def build_url(self, path):
         return 'http://{}:{}/{}'.format(self.ip, self.port, path)
+
+    @property
+    def ip(self):
+        return alfred.config_get('chromecast_ip', 'Not yet configured')
+
+    @ip.setter
+    def ip(self, value):
+        alfred.config_set('chromecast_ip', value)
 
     @property
     def youtube_url(self):
@@ -48,10 +52,18 @@ class ChromecastWorkflow(alfred.AlfredWorkflow):
 
     def do_youtube_stop(self, query=None):
         request(self.youtube_url, method='DELETE')
+        self.write_text('Playback stopped')
+
+    def do_set_ip(self, query):
+        self.ip = query
+        self.write_text('New ip: {}'.format(query))
+
+    def do_get_ip(self, query=None):
+        self.write_text('Current ip: {}'.format(self.ip))
 
 
 def main(action, query):
-    chromecast = ChromecastWorkflow(ip=CHROMECAST_IP)
+    chromecast = ChromecastWorkflow()
     chromecast.route_action(action, query)
 
 

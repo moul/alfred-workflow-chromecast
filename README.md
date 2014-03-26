@@ -9,6 +9,8 @@ Alfred Workflow: Chromecast
 
 Chromecast Workflow for Alfred2
 
+<img src="https://raw.githubusercontent.com/moul/alfred-workflow-chromecast/master/screenshots/logo.png" />
+
 Control [Chromecast](http://www.google.com/intl/fr/chrome/devices/chromecast/index.html) from Alfred.
 
 Installation

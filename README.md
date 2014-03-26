@@ -16,6 +16,16 @@ Installation
 
 [Download](https://github.com/moul/alfred-workflow-chromecast/raw/master/Chromecast.alfredworkflow) and import to Alfred
 
+Configure Chromecast ip from Alfred: `chromecast-setip xxx.xxx.xxx.xxx`
+
+Commands
+--------
+
+- Play a youtube video: `chromecast-yt iRZ2Sh5-XuM`
+- Stop youtube video playback: `chromecast-yt stop`
+- Set ip address: `chromecast-setip 1.2.3.4`
+- Shot ip address: `chromecast-getip`
+
 Dependencies
 ------------
 

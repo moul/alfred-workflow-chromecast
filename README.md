@@ -40,6 +40,7 @@ Links
 
 - [Packal: Chromecast](http://www.packal.org/workflow/chromecast)
 - [Source Code](https://github.com/moul/alfred-workflow-chromecast/)
+- [Official Forum Post](http://www.alfredforum.com/topic/4160-chromecast-send-content-to-a-googles-chromecast-device/?p=24952)
 
 License
 -------

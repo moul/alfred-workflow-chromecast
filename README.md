@@ -33,6 +33,7 @@ Dependencies
 
 - Alfred 2 with PowerPack
 - Python >= 2.7
+- A configured Chromecast on the same network
 
 Links
 -----

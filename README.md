@@ -5,7 +5,7 @@ Alfred Workflow: Chromecast
 [![library users](https://sourcegraph.com/api/repos/github.com/moul/alfred-workflow-chromecast/badges/library-users.png)](https://sourcegraph.com/github.com/moul/alfred-workflow-chromecast)
 [![Total views](https://sourcegraph.com/api/repos/github.com/moul/alfred-workflow-chromecast/counters/views.png)](https://sourcegraph.com/github.com/moul/alfred-workflow-chromecast)
 [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/moul/alfred-workflow-chromecast/counters/views-24h.png)](https://sourcegraph.com/github.com/moul/alfred-workflow-chromecast)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/moul/alfred-workflow-chromecast/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/moul/alfred-workflow-chromecast/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![GuardRails badge](https://badges.production.guardrails.io/moul/alfred-workflow-chromecast.svg)](https://www.guardrails.io)
 
 Chromecast Workflow for Alfred2
 
